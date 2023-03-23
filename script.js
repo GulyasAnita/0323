@@ -40,4 +40,24 @@ rendezesSzoveg(SZOVEGLISTA); /**lista címét adja át */
   szuresfeltetele="<5"
   const szurtLista2=szurNevSzerint(OBJEKTUMLISTA,szuresfeltetele);
   console.log(szurtLista2);
+
+
+  /**A html kódban lévő input mezőben érték szerint szűrjünk */
+  /**1. elérjük az input elemet
+   * 2. 
+   * 3. a szűrési érték helyére beírjuk az input elem value értékét
+   * 4. Mikor kell ennek megtörténnie? - amikor megváltozik az input elem értéke, akkor 3.
+   * 5.meghívjuk a szűrő függvényt
+   */
+  /**1. */
+  const nevELEM = $("#nev");
+  /**3 */
+  let szuresiFeltetel=nevELEM.val()
+  szurtLista = szurNevSzerint(OBJEKTUMLISTA,szuresiFeltetel);
+  console.log(szurtLista);
+/**eseménykezelő a beviteli mezőre: change, keyup */
+  nevELEM.on("click",function(){
+    sadasd
+
+  });
 });
